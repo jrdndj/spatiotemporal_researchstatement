@@ -1,7 +1,12 @@
 \documentclass{article}
 \usepackage[utf8]{inputenc}
 \usepackage{apacite}
-\usepackage{graphicx}   
+\usepackage{graphicx} 
+\usepackage{pdflscape}
+
+
+
+
 \graphicspath{{figures/}}
 
 \title{Spatiotemporal Pointing in Augmented Reality Music Teaching Systems}
@@ -23,7 +28,7 @@ April 01 2020
 \end{center}
 
 \begin{abstract}
-     Spatiotemporal pointing allows the user to touch base with a moving target within a limited time frame especially in a virtual space. In this given short window, the user has limited time to move, control its movement and even process the type of corresponding response that they should render. This phenomenon can be observed in any environment augmented by visual or audio cues - environments that require timely precision, rhythm and synchronization. Similarly, error rates are commonly observed but are not properly modelled in order to mitigate them. Movements and precision are recognized differently by the computer as there are other considerations beyond flat surfaces that are usually covered by Fitts' Law. This research attempts to understand spatiotemporal pointing analysis and modeling in augmented reality music teaching systems. Future work can lead to the use of these findings towards better design affordances in music teaching systems. 
+     Spatiotemporal pointing allows the user to touch base with a moving target within a limited time frame especially in a virtual space. In this given short window, the user has limited time to move, control its movement and even process the type of corresponding response that they should render. This phenomenon can be observed in any environment augmented by visual or audio cues - environments that require timely precision, rhythm and synchronization. Similarly, error rates of these spatiotemporal elements are commonly observed but are not properly modelled in order to mitigate them. Movements and precision are recognized differently by the computer as there are other considerations beyond flat surfaces that are usually covered by Fitts' Law. Spatiotemporal Pointing aims to address this gap for immersive spaces in Virtual, Augmented and Mixed Reality. With AR-based Music Teaching Systems becoming more prevalent yet not entirely adopted by practitioners and beginners, there is an open clamour for more usable learning applications. This research attempts to understand spatiotemporal pointing analysis and modeling in augmented reality music teaching systems. Future work can lead to the use of these findings towards better user affordances in designing music teaching systems and interfaces. 
 \end{abstract}
 
 
@@ -43,8 +48,19 @@ There are only related work on spatio and temporal pointing in augmented and vir
 \end{itemize}
 \section{Research Plan and Methodology}
 The area of modeling, analyzing and investigating spatiotemporal pointing is relatively-new and much has been left unexplored. There are several attempts to understand and model basic human activities, their reaction and their cognitive loads while doing and being immersed in these spatiotemporal activities.\\
+
 There are numerous papers and works on Augmented Reality Music Teaching Systems and most of their contributions are either on introducing a new ubiquituous interface, having practice and expert modes, improving the graphical rendering of the augmented visualizations. With the consideration of modeling and understanding spatiotemporal pointing within these augmented reality music teaching systems, there seems to be a lot of room to explore.\\
-The proponent began with the prior research question of \textit{How might we model and understand the skills of a music expert and develop an interface that beginners can use to ease their music learning experiences}? We believe that to be able to build and understand these models, we can discover the different affordances and guidelines that we can use to design an interface that will help address this research question in mind.
+
+The proponent began with the prior research question of \textit{How might we model and understand the skills of a music expert and develop an interface that beginners can use to ease their music learning experiences}? We believe that to be able to build and understand these models, we can discover the different affordances and guidelines that we can use to design an interface that will help address this research question in mind. An overview of the research plan and methodology is described in Fig.\ref{fig:branches}. 
+
+\begin{landscape}
+\begin{figure}[h]
+\centering
+ \includegraphics[width=\columnwidth\textheight]{figures/branches.png}
+    \caption{An overview of the research branches showing breadth and depth. The middle element in highlight, \textbf{Understanding Novice and Expert Users in AR Piano Teaching Systems with Spatiotemporal Pointing}, is the intended focus of the dissertation. Each node in the diagram is targetted as a concrete contribution leading to a publication.}\label{fig:branches}
+\end{figure}
+\end{landscape}
+
 \subsection{Research Questions}
 The research proposal shall focus on how we can model the actions, reactions and cognitive load of users of various augmented reality music teaching systems. It shall cover breadth of use-cases, and tasks that consider user activities while being immersed in these environments. Such tasks include strumming (guitar), fiddling (violin), and pressing (piano) in immersive spaces. We can dive specifically into augmented reality piano teaching systems  and use the initial models from these broad music instruments as standards and baselines. To understand how the research can be executed, we raise the following questions: 
 \begin{enumerate}
