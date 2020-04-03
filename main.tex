@@ -23,7 +23,7 @@ A Research Proposal\\
 Jordan Aiko Deja\\
 jordan.deja@famnit.upr.si\\
 \vspace{0.5cm}
-April 01 2020
+\today
 \vspace{0.5cm}
 \end{center}
 
@@ -31,16 +31,38 @@ April 01 2020
      Spatiotemporal pointing allows the user to touch base with a moving target within a limited time frame especially in a virtual space. In this given short window, the user has limited time to move, control its movement and even process the type of corresponding response that they should render. This phenomenon can be observed in any environment augmented by visual or audio cues - environments that require timely precision, rhythm and synchronization. Similarly, error rates of these spatiotemporal elements are commonly observed but are not properly modelled in order to mitigate them. Movements and precision are recognized differently by the computer as there are other considerations beyond flat surfaces that are usually covered by Fitts' Law. Spatiotemporal Pointing aims to address this gap for immersive spaces in Virtual, Augmented and Mixed Reality. With AR-based Music Teaching Systems becoming more prevalent yet not entirely adopted by practitioners and beginners, there is an open clamour for more usable learning applications. This research attempts to understand spatiotemporal pointing analysis and modeling in augmented reality music teaching systems. Future work can lead to the use of these findings towards better user affordances in designing music teaching systems and interfaces. 
 \end{abstract}
 
-
 \section{Introduction}
 Temporal pointing refers to having a target that is about to appear within a limited time window for the user to response \cite{lee2016website}. Spatial pointing on the other hand requires the user to have control of the movement in an immersive space. As such Spatiotemporal pointing combines these two principles and is referred to as the movement of a user in an immersive environment as a response to a stimulus that is driven by a limited amount of time for selection. In such environments, there are many considerations that need to be understood. To maintain the temporal element, an immersive space needs to have an internal time-keeping mechanism, a response-execution stage, input processing done automatically all placed in a virtual non 2-dimensional space. There is a lot of work being done in this area with the aim of investigating and understanding human cognitive load, improving the accuracy in the rendering and performance of visual elements and discovering novel implications that minimise latency.\\
 
-Innovations in spatiotemporal pointing contributes to Computational HCI. Since immersive environments are computer-generated, it is indeed vital to automate and streamline the processes that improve the modelling of the activities that happen in these environments such as spatiotemporal pointing. 
+Innovations in spatiotemporal pointing contributes to Computational HCI. Since immersive environments are computer-generated, it is indeed vital to automate and streamline the processes that improve the modelling of the activities that happen in these environments such as spatiotemporal pointing. Virtual, Augmented and Mixed Reality environments are examples of ideal case studies in investigating spatiotemporal pointing. There are various related work seen in the succeeding section which has done formative studies on modelling, predicting, simulating action and reaction in such spaces. These studies have provided immense contribution in allowing us to understand (1) how objects move and collide in virtual spaces, (2) how users respond to these objects and (3) how we can foster design affordances that improve their performance. \\
+
+A lot of music teaching systems have been built with augmented and virtual reality as a medium for innovation. There are notable augmented reality piano teaching systems that have been tested and investigated on such as the work of \cite{rogers2014piano, sun2018mr, birhanu2017keynvision}. These works have used overlaid and augmented visualizations in training the users with time-specific key presses. Such works show remarkable innovation and design as seen from their findings. However, cognitive load, user response time have not been carefully modelled or observed in the usage of the participants in these studies. This research attempts to address these gaps on building spatiotemporal models in these augmented reality music teaching systems. 
 \section{Related Work}
 There are only related work on spatio and temporal pointing in augmented and virtual reality spaces. There seems to be barely any research work on AR music teaching systems as the space is relatively new and has significant potential.\\
 \begin{itemize}
-\item The study of \cite{lee2016modelling} attempts to model error rates in temporal pointing. The tasks and experiments are done involving an object in an immersive spatial space. User reactions and actions like intercepting a ball where observed. Their study contributed on discussing theoretical assumptions on having an internal clock, response execution, input processing and others. Their findings mentioned selected methods between physical and touchscreenn buttons in gaming performance such as touch-down, touch-maximum, touch-release, key-press, key-release. These experiments were done with temporal games like Flappy Bird. Difficulty in participants were observed and opens the possibilities to discussing and modelling their actions, reactions in these temporal environments. 
+\item The study of \cite{lee2016modelling} attempts to model error rates in temporal pointing. The tasks and experiments are done involving an object in an immersive spatial space. User reactions and actions like intercepting a ball where observed. Their study contributed on discussing theoretical assumptions on having an internal clock, response execution, input processing and others. Their findings mentioned selected methods between physical and touchscreenn buttons in gaming performance such as touch-down, touch-maximum, touch-release, key-press, key-release. These experiments were done with temporal games like Flappy Bird. Difficulty in participants were observed and opens the possibilities to discussing and modelling their actions, reactions in these temporal environments.
+\begin{figure}[htbo]
+\centering
+ \includegraphics[width=4cm]{figures/spatiotemporalmovingtargetselection.png}
+    \caption{Illustrating Spatiotemporal Task Selection with moving targets as seen in the work of \cite{lee2016modelling}.
+ }\label{fig:spatiotemporaltask}
+\end{figure}
 \item The study of \cite{lee2017boxer}, investigated on multimodal collision of virtual objects. They compared temporal pointing vs virtual batting in terms of spatial precision in collisions. This was on a virtual ball game and not on a music teaching system.
+
+\begin{figure}[htbp]
+\centering
+ \includegraphics[width=8cm]{figures/boxmodel.png}
+    \caption{One of the timing experiments with a box model done by \cite{lee2017boxer}. It considers capturing timing error while the user attempts to catch a target that is regularly blinking.
+ }\label{fig:boxmodel}
+\end{figure}
+
+\begin{figure}[htbp]
+\centering
+ \includegraphics[width=12cm]{figures/fingermodel.png}
+    \caption{A sample of finger typing model built from various users done by the work of \cite{jiangwe}. This allows us to understand user behaviours and various typing mechanisms which aids in designing interfaces better.
+ }\label{fig:fingermodel}
+\end{figure}
+
 \item The study of \cite{lee2018moving}
 \item The work of \cite{kim2018impact} investigated on how impact activation can improve button pressing when testing in various fast-tapping experiments. Findings mention that impact activation significantly improves performance by the users. In music teaching systems, pressing the piano resembles an action of pressing a button and as such, the model built in this work can be used to understand and help the user improve in its temporal accuracies. 
 \item The study of \cite{lee2019geometrically} constructed a predictive model that explains the effect of end-to-end latency on user error rates in a moving target. This was tested on moving-target selection games which have the same rhythm and synchronization effect as music teaching systems. In the paper they were able to address the latency that can offset from unintended effects. This model can be added in an augmented reality teaching system so that we can isolate expert and novice errors in understanding their actions and reactions in the immersive space. 
@@ -51,13 +73,14 @@ The area of modeling, analyzing and investigating spatiotemporal pointing is rel
 
 There are numerous papers and works on Augmented Reality Music Teaching Systems and most of their contributions are either on introducing a new ubiquituous interface, having practice and expert modes, improving the graphical rendering of the augmented visualizations. With the consideration of modeling and understanding spatiotemporal pointing within these augmented reality music teaching systems, there seems to be a lot of room to explore.\\
 
-The proponent began with the prior research question of \textit{How might we model and understand the skills of a music expert and develop an interface that beginners can use to ease their music learning experiences}? We believe that to be able to build and understand these models, we can discover the different affordances and guidelines that we can use to design an interface that will help address this research question in mind. An overview of the research plan and methodology is described in Fig.\ref{fig:branches}. 
+The proponent began with the prior research question of \textit{How might we model and understand the skills of a music expert and develop an interface that beginners can use to ease their music learning experiences}? We believe that to be able to build and understand these models, we can discover the different affordances and guidelines that we can use to design an interface that will help address this research question in mind. An overview of the research plan and methodology is described in Fig.\ref{fig:branches}. The green branches represent the theoretical background that needs to be verified using laboratory experiments. This allows the proponent to validate the research questions within the study.  The orange branches include an interdisciplinary investigation on spatiotemporal pointing and sensorimotor parameters that allow the research to validate its hypothesis involving cognitive load. The middle element in highlight capitalizes on the results of both orange and green branches, \textbf{Understanding Novice and Expert Users in AR Piano Teaching Systems with Spatiotemporal Pointing}, is the intended focus of the dissertation. 
 
 \begin{landscape}
 \begin{figure}[h]
 \centering
  \includegraphics[width=\columnwidth\textheight]{figures/branches.png}
-    \caption{An overview of the research branches showing breadth and depth. The middle element in highlight, \textbf{Understanding Novice and Expert Users in AR Piano Teaching Systems with Spatiotemporal Pointing}, is the intended focus of the dissertation. Each node in the diagram is targetted as a concrete contribution leading to a publication.}\label{fig:branches}
+    \caption{An overview of the research branches showing breadth and depth. Each branch represents an experiment which will be part of the methodology in this proposal. Each node in the diagram is targetted  as a concrete contribution leading to a publication.
+ }\label{fig:branches}
 \end{figure}
 \end{landscape}
 
@@ -67,11 +90,11 @@ The research proposal shall focus on how we can model the actions, reactions and
     \item How do experts and novices interact with a musical instrument?\\
     Hypothesis: Experts and novices interact differently with a music instrument be it a physical or an virtual one. 
     \item How can we model the actions, reactions, thought processes of both expert and novice users when using an augmented reality music system?\\
-    Hypothesis: Expert models can be established as an ideal baseline or target performance for novice users.
+    Hypothesis: Expert models can be established as an ideal baseline or target performance for novice users. 
     \item What features in an augmented reality music teaching system can we introduce to design an interface for novice users?\\
-    Hypothesis: Understand novice user models and expert user models can allow us to discover gaps in skills that can be prioritized in the design of these immersive interfaces. 
+    Hypothesis: Understanding novice user models and expert user models can allow us to discover gaps in skills that can be prioritized in the design of these immersive interfaces. 
     \item How do we re-imagine novice interactions with augmented reality music teaching systems build from their user models?\\
-    Hypothesis: By building an immersive interface built with expert user models as baselines can easier facilitate the transition of novices. 
+    Hypothesis: By building an immersive interface built with expert user models as baselines, we can easier facilitate the transition of novices by reducing cognitive load which aids in learning.
     \item What is the relationship between spatiotemporal pointing difficulty and musical skills difficulty?\\
     Hypothesis: Reducing difficulty in spatiotemporal pointing can reduce cognitive load that can help novices in mastering their music skills. 
 \end{enumerate}
@@ -82,7 +105,9 @@ describe this information and their types and why they are important\\
 what are the artefacts and deliverables at the end of each phase?\\
 synthesis of all the main phases and how they lead to the contribution or to answering the research question\\
 \section{Contribution}
-have a brief summary of what the most recent contributions there are and identify how your contribution stands out. 
+The works of \cite{liao2020button, lee2019geometrically} have established the foundation on modeling and measuring basic actions in immersive spaces and at the same time minimizing latency. This research will focus on understanding building user models in augmented reality music teaching spaces and systems which as of time of writing has not been explored yet. It will contribute to better understanding of the differences between expert and novice musicians and how cognitive load affects their learning within these immersive spaces. The findings of the proposed research will be very useful to the research community interested in Augmented Reality, Music Teaching Systems, interface design. 
+
+
 \bibliographystyle{apacite}
 \bibliography{references}
 
